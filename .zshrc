@@ -8,6 +8,7 @@ alias norminette='clear;norminette'
 alias -g gccw='clear;gcc -Wall -Wextra -Werror'
 alias 42FileChecker='sh ~/42FileChecker/42FileChecker.sh'
 alias ll='ls -l'
+alias doc='cd ~/Documents'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 alias valgrind="~/.brew/bin/valgrind"
 # Load Homebrew config script

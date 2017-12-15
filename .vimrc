@@ -16,7 +16,15 @@ filetype plugin indent on
 set mouse=a
 set background=dark
 "syn color changes
-
+function! s:insert_gates()
+	let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
+	execute "normal! i#ifndef " . gatename
+	execute "normal! o# define " . gatename . "\n\n\n"
+	execute "normal! Go#endif"
+	normal! kk
+endfunction
+autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
+autocmd BufNewFile *.{h,hpp,c,cpp} :Stdheader
 
 hi MatchParen  ctermfg=Black ctermbg=White
 hi Visual ctermbg=White ctermfg=Black
