@@ -6,3 +6,4 @@
 	"rulers": [80, 80],
 	"hightlight_modified_tabs": true,
 	"default_dir":"~/42_lici/"
+	"match_selection":false
