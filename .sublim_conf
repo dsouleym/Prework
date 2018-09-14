@@ -1,0 +1,8 @@
+	"auto_indent": true,
+	"font_size": 12,
+	"smart_indent": true,
+	"trim_automatic_white_space": true,
+	"auto_complete_delay": 5,
+	"rulers": [80, 80],
+	"hightlight_modified_tabs": true,
+	"default_dir":"~/42_lici/"
